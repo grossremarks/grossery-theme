@@ -1,2 +1,2 @@
-# Grosser 
-## A theme designed for [GrossRe:MarkS]("https://grossremarks.com/")
+# Grossery
+A theme designed for [GrossRe:MarkS]("https://grossremarks.com/")
