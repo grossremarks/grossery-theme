@@ -9,6 +9,17 @@
 }
 .main-header .main-header-title {
     font-family: "Cutive Mono", "Courier New", monospace;
+    font-size: 40px;
     color: white;
     padding-left: 2%;
+    text-decoration: none;
+}
+
+.main-header .main-header-title:hover {
+    color: gray;
+}
+
+.main-header-subtitle {
+    font-family: "Open Sans", "Arial", monospace;
+    color: white;
 }
