@@ -1,7 +1,12 @@
 <header class="main-header">
-    <ul class="nav col-lg-auto me-lg-auto mb-2 mb-md-0">
-         <li> <a href="#" class=" px-4 main-header-title justify-content-left col-20 col-md-9"> {{ .Site.Title }} </a> </li>
-    </ul>
+    <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0">
+         <li> <a href="#" class="navbar-brand px-4 main-header-title justify-content-left col-20 col-md-9"> {{ .Site.Title }} </a> </li>
+         <div class="text-white navbar-toggler navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
+             <li class="nav-item active">
+                 <a class="nav-link" href="#"> About </a>
+             </li>
+         </div>
+    </div>
     <div class="main-header-subtitle">
         <i class="px-4" > "{{ .Site.Params.subtitle_description }}" </i>
     </div>
