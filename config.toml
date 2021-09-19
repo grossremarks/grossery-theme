@@ -1,2 +1,31 @@
+[menu]
+[[menu.main]]
+    identifier = 'blog'
+    name = 'Blog'
+    pre = "<div class='nav-link'>"
+    post = "</div>"
+    url = '/content/'
+    weight = 1
+[[menu.main]]
+    identifier = 'about'
+    name = 'About'
+    pre = "<div class='nav-link'>"
+    url = '/about/'
+    post = "</div>"
+    weight = 2
+[[menu.main]]
+    identifier = 'github'
+    name = 'Github'
+    pre = "<div class='nav-link github-header'>"
+    url = 'https://github.com'
+    post = "</div>"
+    weight = 3
+[[main.menu]]
+    identifier = 'twitter'
+    name = 'Twitter'
+    pre = "<div class='nav-link twitter-header'>"
+    url = 'https://twitter.com'
+    post = "</div>"
+    weight = 4
 [params]
     subtitle_description = "Add a subtitle_description variable to your params to update this"

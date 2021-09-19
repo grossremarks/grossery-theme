@@ -1,5 +1,7 @@
 @import "_fonts";
+@import "_svg";
 
+/* Main header css -- right now, just sets it to black background */
 .main-header {
     background: black;
     padding-right:0;
@@ -7,6 +9,7 @@
     margin-right:auto;
     margin-left:auto;
 }
+/* Adds font for our header */
 .main-header .main-header-title {
     font-family: "Cutive Mono", "Courier New", monospace;
     font-size: 60px;
@@ -19,6 +22,7 @@
     color: gray;
 }
 
+/* Add font for our subtitle */
 .main-header-subtitle {
     font-family: "Open Sans", "Arial", monospace;
     font-size: 20px;
