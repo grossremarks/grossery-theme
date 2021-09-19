@@ -2,28 +2,28 @@
 [[menu.main]]
     identifier = 'blog'
     name = 'Blog'
-    pre = "<div class='menu-header nav-link'>"
+    pre = "<div class='nav-link'>"
     post = "</div>"
     url = '/content/'
     weight = 1
 [[menu.main]]
     identifier= 'tags'
     name = 'Tags'
-    pre = "<div class='menu-header nav-link'>"
+    pre = "<div class='nav-link'>"
     url = '/tags/'
     post = "</div>"
     weight =2
 [[menu.main]]
     identifier = 'about'
     name = 'About'
-    pre = "<div class='menu-header nav-link'>"
+    pre = "<div class='nav-link'>"
     url = '/about/'
     post = "</div>"
     weight = 2
 [[menu.main]]
     identifier = 'github'
     name = ""
-    pre = "<div class='menu-header nav-link github-header'><img class='text-white' src='/svg/github.svg' style=' filter: invert(.75); height:20px; width: 20px;' alt='test'/>"
+    pre = "<div class='nav-link'><img class='text-white' src='/svg/github.svg' style=' filter: invert(.75); height:20px; width: 20px;' alt='test'/>"
     url = 'https://github.com'
     post = "</div>"
     weight = 3
@@ -31,7 +31,7 @@
     identifier = 'twitter'
     name = ''
     url = 'https://twitter.com'
-    pre = "<div class='menu-header nav-link github-header'><img class='text-white' src='/svg/twitter.svg' style=' filter: invert(.75); height:20px; width: 20px;' alt='test'/>"
+    pre = "<div class='nav-link'><img class='text-white' src='/svg/twitter.svg' style=' filter: invert(.75); height:20px; width: 20px;' alt='test'/>"
     post = "</div>"
     weight = 4 
 [params]

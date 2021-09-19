@@ -1,17 +1,17 @@
-<header class="main-header">
-    <nav class="navbar navbar-expand justify-content-between">
-        <li>
-        <a class="navbar-brand main-header-title justify-content-left px-4" href="{{ .Site.BaseURL }}">
+<header class="main-header bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-md justify-content-between" >
+        <a class="navbar-brand justify-content-left px-4 text-title text-font-header fs-1" href="{{ .Site.BaseURL }}">
             {{ .Site.Title }}
         </a>
-        </li>
-        <div class="text-white navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
+        <div class="navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
              {{ $currentPage := . }}
                  {{ range .Site.Menus.main }}
                         <li class= "nav-link" >
-                            <a class="text-white text-decoration-none menu-header" href="{{.URL}}">
+                            <a class="text-decoration-none" href="{{.URL}}">
                                 {{ .Pre }}
-                                <span> {{ .Name }} </span>
+                                    <span class="text-font-content"> 
+                                        {{ .Name }} 
+                                    </span>
                                 {{ .Post }}
                             </a>
                         </li>
@@ -19,5 +19,9 @@
                {{ end }}
         </div>
     </nav>
-    <i class="text-white main-header-subtitle px-4" > "{{ .Site.Params.subtitle_description }}" </i>
+    <div class="px-4" > 
+        <span class="fst-italic fs-6 text-white text-font-content"> 
+            "{{ .Site.Params.subtitle_description }}" 
+        </span> 
+    </div>
 </header>
