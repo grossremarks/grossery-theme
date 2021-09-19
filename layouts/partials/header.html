@@ -1,7 +1,11 @@
 <header class="main-header">
-    <div class="nav col-lg-auto me-lg-auto mb-2 mb-md-0">
-        <li> <a href="{{ .Site.BaseURL }}" class="navbar-brand px-4 main-header-title justify-content-left col-20 col-md-9"> {{ .Site.Title }} </a> </li>
-         <div class="collapse navbar-collapse text-white navbar-toggler navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
+    <nav class="navbar navbar-expand justify-content-between">
+        <li>
+        <a class="navbar-brand main-header-title justify-content-left" href="{{ .Site.BaseURL }}">
+            {{ .Site.Title }}
+        </a>
+        </li>
+        <div class="text-white navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
              {{ $currentPage := . }}
                  {{ range .Site.Menus.main }}
                     {{ if .HasChildren }}
@@ -22,9 +26,7 @@
                         </li>
                     {{ end }}
                 {{ end }}
-         </div>
-    </div>
-    <div class="main-header-subtitle">
-        <i class="px-4" > "{{ .Site.Params.subtitle_description }}" </i>
-    </div>
+
+        </div>
+    </nav>
 </header>
