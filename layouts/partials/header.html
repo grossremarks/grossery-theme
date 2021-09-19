@@ -1,32 +1,23 @@
 <header class="main-header">
     <nav class="navbar navbar-expand justify-content-between">
         <li>
-        <a class="navbar-brand main-header-title justify-content-left" href="{{ .Site.BaseURL }}">
+        <a class="navbar-brand main-header-title justify-content-left px-4" href="{{ .Site.BaseURL }}">
             {{ .Site.Title }}
         </a>
         </li>
         <div class="text-white navbar-nav mr-auto mt-lg-0 mt-8 pt-8">
              {{ $currentPage := . }}
                  {{ range .Site.Menus.main }}
-                    {{ if .HasChildren }}
-                        <li class=" nav-link {{ if $currentPage.HasMenuCurrent "main" . }} active {{end }}">
-                            {{ .Pre }}
-                            <a href="#">
-                                <span>{{ .Name }} </span>
-                            </a>
-                            {{ .Post }}
-                        </li>
-                    {{ else }}
-                        <li class= "nav-link">
-                            {{ .Pre }}
-                            <a href="{{.URL}}">
+                        <li class= "nav-link" >
+                            <a class="text-white text-decoration-none menu-header" href="{{.URL}}">
+                                {{ .Pre }}
                                 <span> {{ .Name }} </span>
+                                {{ .Post }}
                             </a>
-                            {{ .Post }}
                         </li>
-                    {{ end }}
-                {{ end }}
-
+ 
+               {{ end }}
         </div>
     </nav>
+    <i class="text-white main-header-subtitle px-4" > "{{ .Site.Params.subtitle_description }}" </i>
 </header>
