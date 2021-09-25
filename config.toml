@@ -23,7 +23,7 @@
 [[menu.main]]
     identifier = 'github'
     name = ''
-    pre = "<div class='header-icon nav-link'><img class='text-white' src='/svg/github.svg' alt='test'/>"
+    pre = "<div class='header-icon nav-link'><img class='text-white' src='/svg/github.svg' alt='github'/>"
     url = 'https://github.com'
     post = "</div>"
     weight = 3
@@ -31,28 +31,28 @@
     identifier = 'twitter'
     name = ''
     url = 'https://twitter.com'
-    pre = "<div class='header-icon nav-link'><img class='text-white' src='/svg/twitter.svg' alt='test'/>"
+    pre = "<div class='header-icon nav-link'><img class='text-white' src='/svg/twitter.svg' alt='twitter'/>"
     post = "</div>"
     weight = 4 
 [[menu.main]]
-    identifier = 'linked-in'
+    identifier = 'linkedin'
     name = ''
     url = "https://www.linkedin.com"
-    pre = "<div class='header-icon nav-link'><img src='/svg/linkedin.svg' alt='test'/>"
+    pre = "<div class='header-icon nav-link'><img src='/svg/linkedin.svg' alt='linkedin'/>"
     post = "</div>"
     weight = 5 
 [[menu.main]]
     identifier = 'facebook'
     name = ''
     url = "https://www.facebook.com"
-    pre = "<div class='header-icon nav-link'><img src='/svg/facebook.svg' alt='test'/>"
+    pre = "<div class='header-icon nav-link'><img src='/svg/facebook.svg' alt='facebook'/>"
     post = "</div>"
     weight = 6 
 [[menu.main]]
     identifier = 'instagram'
     name = ''
     url = "https://www.instagram.com"
-    pre = "<div class='header-icon nav-link'><img src='/svg/instagram.svg' alt='test'/>"
+    pre = "<div class='header-icon nav-link'><img src='/svg/instagram.svg' alt='instagram'/>"
     post = "</div>"
     weight = 6 
 [[menu.footer]]
