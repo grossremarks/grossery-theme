@@ -6,3 +6,9 @@
         filter: brightness(0.85);
     }
 }
+
+.header-icon {
+    filter: invert(.50);
+    height: 30px;
+    width:  30px;
+}
