@@ -9,7 +9,7 @@ homepage = "https://grossremarks.com"
 tags = []
 features = []
 # This is the version I built on, didn't test backwards compatibility
-min_version = "0.68.3"
+min_version = "0.88.1"
 
 [author]
   name = "Mark S Gross"
