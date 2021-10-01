@@ -1,5 +1,13 @@
 {{ define "main" }}
-<div class="container">
-    <p> This is from the single page template </p>
+<div class="container mx-auto min-vh-100 pt-4">
+    <header class="mb-4">
+        <h1 class="display-4">{{ .Title }}</h1>
+    </header>
+    <section class="text-font-content">
+        {{ .Content }}
+    </section>
+    <section>
+        {{- partial "recommendations.html" . -}}
+    </section>
 </div>
 {{ end }}
