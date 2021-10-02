@@ -4,19 +4,27 @@
             {{ .Site.Title }}
         </a>
         <div class="navbar-nav mr-auto mt-lg-0 mt-8 pt-4 px-4">
-             {{ $currentPage := . }}
-                 {{ range .Site.Menus.main }}
-                        <li class= "nav-link" >
-                            <a class="text-decoration-none" href="{{.URL}}">
-                                {{ .Pre }}
-                                    <span class="text-font-content"> 
-                                        {{ .Name }} 
-                                    </span>
-                                {{ .Post }}
-                            </a>
-                        </li>
- 
-               {{ end }}
+            <li class = "nav-link" >
+                <a class="text-decoration-none" href="{{ .Site.BaseURL }}">
+                    <div class="nav-link">
+                        <span class="text-font-content">Blog</span>
+                    </div>
+                </a>
+            </li>
+            <li class = "nav-link" >
+                <a class="text-decoration-none" href="/about/">
+                    <div class="nav-link">
+                        <span class="text-font-content">About</span>
+                    </div>
+                </a>
+            </li>
+            <li class = "nav-link" >
+                <a class="text-decoration-none" href="/tags/">
+                    <div class="nav-link">
+                        <span class="text-font-content">Tags</span>
+                    </div>
+                </a>
+            </li>
         </div>
     </nav>
     <div class="px-4 pb-2" > 
