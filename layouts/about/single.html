@@ -1,5 +1,9 @@
 {{ define "main" }}
-<div>
-    Why {{ .Title }} {{ .Title }}
+<div class="container">
+    {{- partial "about/aboutBlurb.html" . -}}
+    {{- partial "about/experience.html" . -}}
+    {{- partial "about/education.html" . -}}
+    {{- partial "about/skills.html" . -}}
+    {{- partial "about/experience.html" . -}}
 </div>
 {{ end}}
