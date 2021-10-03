@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="container">
-    {{- partial "about/aboutBlurb.html" . -}}
-    {{- partial "about/experience.html" . -}}
-    {{- partial "about/education.html" . -}}
-    {{- partial "about/skills.html" . -}}
-    {{- partial "about/experience.html" . -}}
+<div>
+    <div class="bg-light"> {{- partial "about/aboutBlurb.html" . -}} </div>
+    <div class="bg-white"> {{- partial "about/experience.html" . -}} </div>
+    <div class="bg-light"> {{- partial "about/education.html" . -}}  </div>
+    <div class="bg-white"> {{- partial "about/skills.html" . -}} </div>
+    <div class="bg-light"> {{- partial "about/experience.html" . -}} </div>
 </div>
 {{ end}}
