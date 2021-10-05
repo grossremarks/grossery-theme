@@ -13,13 +13,12 @@
         text-decoration: underline;
     }
 }
-.header-icon {
-    filter: invert(.50);
-    height: 30px;
-    width:  30px;
+.icon-about {
+    height: 35px;
+    width:  35px;
 
     &:hover,
     &:focus {
-        filter: invert(.75);
+        filter: invert(.50);
     }
 }
