@@ -1,7 +1,7 @@
 <div class="px-4 py-4">
-    <div class="row container ">
-        <div class="mh-100 mw-50 col-12 col-sm-4 text-left">
-            <img src="{{ .Params.img }}" alt="no_image.jpg" class=" img-responsive rounded-circle img-thumbnail" />
+    <div class="row container-fluid bg-success">
+        <div class="mh-100 mw-50 col-auto mr-auto col-sm-2 text-left bg-primary">
+            <div class="center-block text-center "> <img src="{{ .Params.img }}" alt="no_image.jpg" class=" img-responsive rounded-circle img-thumbnail" /> </div>
             <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold py-2"> 
                 {{ .Params.author }}
             </div>
@@ -16,8 +16,9 @@
             </div>
 
         </div>
-        <div class="col-12 col-sm-8">
-            Hello
+        <div class="col-auto col-lg-8 mr-auto text-font-content bg-danger">
+           
+            {{ .Content }} 
         </div>
     </div>
 </div>
