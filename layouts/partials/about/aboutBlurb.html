@@ -2,9 +2,18 @@
     <div class="row container ">
         <div class="mh-100 mw-50 col-12 col-sm-4 text-left">
             <img src="{{ .Params.img }}" alt="no_image.jpg" class=" img-responsive rounded-circle img-thumbnail" />
-        <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold py-2"> 
-            {{ .Params.author }}
-        </div>
+            <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold py-2"> 
+                {{ .Params.author }}
+            </div>
+            <h3 class="caption center-block text-center font-weight-bold text-font-content-bold-400 py-2"> 
+                {{ .Params.job_title }}
+            </h3>
+            <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold pb-2"> 
+                <a href="{{ .Params.links.contact.link }}" ><img class=" caption icon-about text-center center-block mx-2"  src='/svg/envelope-fill.svg' alt='contact me' /></a>
+                <a href="{{ .Params.links.github.link }}" ><img class=" caption icon-about text-center center-block mx-2" src='/svg/github.svg' alt='github' /></a>
+                <a href="{{ .Params.links.twitter.link }}" > <img class=" caption icon-about text-center center-block mx-2" src='/svg/twitter.svg' alt='twitter' /></a>
+                <a href="{{ .Params.links.linkedin.link }}" > <img class=" caption icon-about text-center center-block mx-2" src='/svg/linkedin.svg' alt='linkedin' /></a>
+            </div>
 
         </div>
         <div class="col-12 col-sm-8">
