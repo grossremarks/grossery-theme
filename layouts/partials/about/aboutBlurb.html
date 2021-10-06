@@ -1,13 +1,17 @@
-<div class="px-4 py-4">
-    <div class="row container-fluid bg-success">
-        <div class="mh-100 mw-50 col-auto mr-auto col-sm-2 text-left bg-primary">
+<div class="px-4 py-4 container">
+    <div class="row container-fluid py-4">
+        <div class="mh-100 mw-50 col-auto mr-auto col-lg-4 text-left py-4">
             <div class="center-block text-center "> <img src="{{ .Params.img }}" alt="no_image.jpg" class=" img-responsive rounded-circle img-thumbnail" /> </div>
             <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold py-2"> 
                 {{ .Params.author }}
             </div>
-            <h3 class="caption center-block text-center font-weight-bold text-font-content-bold-400 py-2"> 
+            <h3 class="caption center-block text-center font-weight-bold text-font-content-bold-400 "> 
                 {{ .Params.job_title }}
             </h3>
+            <h3 class="caption center-block text-center font-weight-bold text-font-content-normal-300 pb-2"> 
+                {{ .Params.company }}
+            </h3>
+
             <div class="display-6 caption center-block text-center font-weight-bold text-font-content-bold font-weight-bold pb-2"> 
                 <a href="{{ .Params.links.contact.link }}" ><img class=" caption icon-about text-center center-block mx-2"  src='/svg/envelope-fill.svg' alt='contact me' /></a>
                 <a href="{{ .Params.links.github.link }}" ><img class=" caption icon-about text-center center-block mx-2" src='/svg/github.svg' alt='github' /></a>
@@ -16,8 +20,7 @@
             </div>
 
         </div>
-        <div class="col-auto col-lg-8 mr-auto text-font-content bg-danger">
-           
+        <div class="col-auto col-lg-8 mr-auto text-font-content px-5 py-5">
             {{ .Content }} 
         </div>
     </div>
