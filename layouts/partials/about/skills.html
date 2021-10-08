@@ -1,0 +1,16 @@
+<div class="px-5 container bg-info">
+    <div class="row container-fluid">
+        <div class="mg-100 mw-50 col-auto mr-auto col-lg-12 text-left bg-success">
+            <div class="display-6 center-block text-lelft text-font-content-bold">
+                Skills
+            </div>
+            <div class="row bg-warning">
+                {{ range .Params.skills }}
+                    <div class="col-md-4 px-2 py-2 bg-primary">
+                    {{- partial "about/skill.html" . -}}
+                    </div>
+                {{ end}}
+            </div>
+        </div>
+    </div>
+</div>
