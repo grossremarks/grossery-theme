@@ -1,9 +1,13 @@
-<div class="card">
-    <img src="{{.img}}" class="img-fluid rounded-start" alt="{{.Name}}_img" />
-    <div class="card-body">
-        <div class="card-title text-font-content-bold display-6">
-            {{ .name }}
+<div class="card h-100">
+    <div class="card-header">
+        <div class="row">
+            <img src="{{.img}}" class="border-0 img-fluid mr-auto col-lg-4" alt="{{.Name}}_img" />
+            <div class="col-auto pt-4 ">
+                <h4 class="text-font-content-bold"> {{ .name }} </h4>
+            </div>
         </div>
+    </div>
+    <div class="card-body">
         <p class="card-text">{{.blurb}}</p>
     </div>
 </div>
