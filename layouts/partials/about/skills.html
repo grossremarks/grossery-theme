@@ -1,12 +1,12 @@
-<div class="px-5 container bg-info">
+<div class="px-5 pb-4 container">
     <div class="row container-fluid">
-        <div class="mg-100 mw-50 col-auto mr-auto col-lg-12 text-left bg-success">
-            <div class="display-6 center-block text-lelft text-font-content-bold">
+        <div class="mg-100 mw-50 col-auto mr-auto col-lg-12 text-left">
+            <div class=" pb-4 display-6 center-block text-left text-font-content-bold">
                 Skills
             </div>
-            <div class="row bg-warning">
-                {{ range .Params.skills }}
-                    <div class="col-md-4 px-2 py-2 bg-primary">
+            <div class="row">
+                {{ range sort .Params.skills "weight" }}
+                    <div class="col-md-3 px-2 py-2">
                     {{- partial "about/skill.html" . -}}
                     </div>
                 {{ end}}
