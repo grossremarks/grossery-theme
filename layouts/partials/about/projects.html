@@ -4,6 +4,38 @@
             <h1 class="pb-4 center-block text-left text-font-content-bold">
                 Projects
             </h1>
+            <div class=" mh-100 row container-fluid">
+                <div id="view-projects" class="carousel" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        {{ range sort .Params.projects "weight" }}
+                        <button type="button" data-bs-target="#view-projects" data-bs-slide-to="{{ .weight }}" class="{{ .active }}" aria-label="{{ .name }}"></button>
+                        {{ end }}
+                    </div>
+                    <div class="carousel-inner mh-100">
+                        {{ range sort .Params.projects "weight" }}
+                        <div class="{{ .active }} carousel-item">
+                            <div class="d-flex justify-content-center">
+                            <img src="{{ .img }}" class=" img-responsive w-100" alt="{{ .name }}" />
+                            </div>
+                            <div class="carousel-caption">
+                                <h5>{{ .name }}</h5>
+                                <p class="d-none d-sm-block">{{ .blurb }}</p>
+                            </div>
+                        </div>
+                        {{ end }}
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#view-projects" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#view-projects" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
