@@ -4,13 +4,10 @@
             <h1 class="pb-4 center-block text-left text-font-content-bold">
                 Projects
             </h1>
-            <div id="project-radio-button">
-            </div>
             <div class="row">
                 {{ $card_color_mapping := .Params.card_color_bg }}
-
                 {{ range sort .Params.projects "weight" }}
-                <div class="col-md-6 px-2 py-2">
+                <div class="col-md-4 px-2 py-2" id="{{.type}}_{{.weight}}">
                     {{- partial "about/skill.html"  (dict "context" . "card_color" $card_color_mapping ) -}}
                 </div>
                 {{ end }}
