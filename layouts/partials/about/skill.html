@@ -1,16 +1,17 @@
 {{ $cardType := default "undef" .context.type }}
 {{ $cardColor := default "bg-light" ( index .card_color $cardType ) }}
 <div class="card {{ $cardColor }} collapse show multi-collapse h-100 shadow">
-    <div class="card-header d-flex">
-        <div class="row  align-self-center">
-            <div class="col-md-3 mx-auto">
-            <img src="{{.context.img}}" class="border-0 img-fluid mr-auto rounded-circle" alt="{{.Name}}_img" />
-            </div>
-            <div class="col-md-9 align-self-center">
-                <h4 class="text-font-content-bold"> {{ .context.name }} </h4>
-            </div>
+    <div class="card-header">
+        <div class="d-flex">
+        <div class="col-md-3 flex-shrink-0 mx-auto">
+            <img src="{{.context.img}}" width="50" height="50" class="border-0 img-fluid mr-auto rounded-circle" alt="{{.Name}}_img" />
+        </div>
+        <div class="col-md-9 flex-grow-1 ms-3 align-self-center">
+            <h4 class="text-font-content-bold"> {{ .context.name }} </h4>
+        </div>
         </div>
     </div>
+    
     <div class="card-body">
         <p class="card-text">{{.context.blurb}}</p>
     </div>
