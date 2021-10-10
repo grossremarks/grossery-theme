@@ -1,13 +1,15 @@
-<div class="card h-100 shadow">
+{{ $cardType := default "undef" .context.type }}
+{{ $cardColor := default "bg-light" ( index .card_color $cardType ) }}
+<div class="card {{ $cardColor }}  h-100 shadow">
     <div class="card-header">
         <div class="row">
-            <img src="{{.img}}" class="border-0 img-fluid mr-auto col-lg-4 rounded-circle" alt="{{.Name}}_img" />
+            <img src="{{.context.img}}" class="border-0 img-fluid mr-auto col-lg-4 rounded-circle" alt="{{.Name}}_img" />
             <div class="col-auto pt-4 ">
-                <h4 class="text-font-content-bold"> {{ .name }} </h4>
+                <h4 class="text-font-content-bold"> {{ .context.name }} </h4>
             </div>
         </div>
     </div>
     <div class="card-body">
-        <p class="card-text">{{.blurb}}</p>
+        <p class="card-text">{{.context.blurb}}</p>
     </div>
 </div>

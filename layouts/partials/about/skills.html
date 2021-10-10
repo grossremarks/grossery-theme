@@ -5,9 +5,10 @@
                 Skills
             </h1>
             <div class="row">
+                {{ $card_color_mapping := .Params.card_color_bg }}
                 {{ range sort .Params.skills "weight" }}
                     <div class="col-md-3 px-2 py-2">
-                    {{- partial "about/skill.html" . -}}
+                    {{- partial "about/skill.html" (dict "context" . "card_color" $card_color_mapping ) -}}
                     </div>
                 {{ end}}
             </div>
